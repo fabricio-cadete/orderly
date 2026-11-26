@@ -1,0 +1,39 @@
+# Node
+node_modules/
+dist/
+.turbo/
+*.log
+.env
+.env.*
+!.env.example
+
+# Expo / React Native
+.expo/
+ios/
+android/
+*.jks
+*.p8
+*.p12
+*.mobileprovision
+
+# Tauri / Rust
+apps/desktop/src-tauri/target/
+apps/desktop/src-tauri/gen/
+
+# .NET
+bin/
+obj/
+*.user
+TestResults/
+
+# Xcode
+xcuserdata/
+DerivedData/
+*.xcuserstate
+
+# OS / editores
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/*
+!.vscode/extensions.json

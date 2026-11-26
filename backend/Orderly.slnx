@@ -1,0 +1,10 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/Orderly.Api/Orderly.Api.csproj" />
+    <Project Path="src/Orderly.Domain/Orderly.Domain.csproj" />
+    <Project Path="src/Orderly.Infrastructure/Orderly.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/Orderly.Api.Tests/Orderly.Api.Tests.csproj" />
+  </Folder>
+</Solution>
