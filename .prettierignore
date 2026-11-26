@@ -1,0 +1,7 @@
+dist
+node_modules
+pnpm-lock.yaml
+backend
+apps/watch
+**/src-tauri/target
+**/src-tauri/gen
