@@ -1,15 +1,14 @@
 using System.Net;
-using Microsoft.AspNetCore.Mvc.Testing;
+using Orderly.Api.Tests.Infrastructure;
 
 namespace Orderly.Api.Tests;
 
-public sealed class HealthEndpointTests(WebApplicationFactory<Program> factory)
-    : IClassFixture<WebApplicationFactory<Program>>
+public sealed class HealthEndpointTests(OrderlyApiFactory factory) : ApiTestBase(factory)
 {
     [Fact]
     public async Task Health_returns_ok()
     {
-        using var client = factory.CreateClient();
+        using var client = Anonymous();
 
         var response = await client.GetAsync("/health");
 
